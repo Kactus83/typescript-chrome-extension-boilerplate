@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension Boilerplate",
+  "version": "1.0",
+  "description": "Chrome Extension Boilerplate",
+  "background": {
+      "service_worker": "src/background/index.js"
+  },
+  "action": {
+      "default_popup": "src/pop-up/index.html",
+      "default_icon": {
+          "16": "assets/icons/icon16.png",
+          "48": "assets/icons/icon48.png",
+          "128": "assets/icons/icon128.png"
+      }
+  },
+  "web_accessible_resources": [
+      {
+          "resources": ["dashboard/index.html"],
+          "matches": ["<all_urls>"]
+      }
+  ],
+  "permissions": ["tabs", "storage", "activeTab"],
+  "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

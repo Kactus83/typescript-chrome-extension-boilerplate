@@ -1,0 +1,1 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(()=>{var e;null===(e=document.getElementById("viewDashboard"))||void 0===e||e.addEventListener("click",(()=>{chrome.tabs.create({url:chrome.runtime.getURL("src/dashboard/index.html")})}))}))})();

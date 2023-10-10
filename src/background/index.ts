@@ -23,3 +23,7 @@ export class Background {
         }
     };
 }
+
+// Initialize background script
+const background = new Background();
+background.init();

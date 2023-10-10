@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
     entry: {
         'src/background/index': './src/background/index.ts',
-        'src/pop-up/index': './src/pop-up/index.ts',
-        'src/dashboard/index': './src/dashboard/index.ts',
+        'src/UI/pop-up/index': './src/UI/pop-up/index.ts',
+        'src/UI/dashboard/index': './src/UI/dashboard/index.ts',
         'src/content/index': './src/content/index.ts'
     },
     module: {
